@@ -30,38 +30,12 @@ Cinema.prototype.getTotalRunningTime = function() {
 }
 
 Cinema.prototype.confirmFilmByYear = function(yearTo) {
-  // const confirmationByYear = 
   return this.films.some((film) => film.year === yearTo);
 }
 
 Cinema.prototype.confirmFilmsOverLength = function(lengthTo) {
-  // const confirmationByYear = 
   return this.films.every((film) => film.length >= lengthTo);
 }
 
 
-// const isBelowThreshold = (currentValue) => currentValue < 40;
-
-// const array1 = [1, 30, 39, 29, 10, 13];
-
-// console.log(array1.every(isBelowThreshold));
-// // Expected output: true
-
 module.exports = Cinema;
-
-// const Film = require('../models/film.js');
-
-// moonlight = new Film('Moonlight', 'drama', 2016, 111);
-// bladeRunner = new Film('Blade Runner 2049', 'sci-fi', 2017, 164);
-// dunkirk = new Film('Dunkirk', 'history', 2017, 96);
-// blackPanther = new Film('Black Panther', 'action', 2018, 134);
-// trainspotting = new Film('T2 Trainspotting', 'drama', 2017, 117);
-
-// films = [moonlight, bladeRunner, dunkirk, blackPanther, trainspotting];
-// cinema = new Cinema(films);
-
-// const filmTitles = cinema.films.map((film) => {
-//   return film.title;
-// });
-
-// console.log(filmTitles);
